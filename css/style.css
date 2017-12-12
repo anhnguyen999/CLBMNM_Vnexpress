@@ -8,6 +8,10 @@ body, html {
 	padding: 0;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
 
 /* header  */
 
@@ -26,14 +30,21 @@ body, html {
 	padding: 5px 0;
 }
 
-.top-bar-inside, .top-banner {
+.top-bar-inside,
+.top-banner,
+.top-nav,
+.main {
     display: flex;
     max-width: 1000px;
     margin: 0 auto;
 }
 
 .top-banner div {
-	padding: 0 3px;
+	/* padding: 0 3px; */
+}
+
+.top-banner div:last-child {
+    padding: 0;
 }
 
 .contact-info {
@@ -43,4 +54,42 @@ body, html {
 i.fa.fa-search {
     background-color: white;
     padding: 3px;
+}
+
+.top-nav ul {
+    padding-left: 0;
+    border-bottom: 2px solid #aba4a4;
+}
+
+.top-nav ul li {
+    display: inline;
+    padding-right: 10px;
+}
+
+.top-nav ul li:first-child a { 
+    color: #a90c0c;
+}
+
+/* main */
+
+.main article {
+    flex-basis: 45%;
+}
+
+.main .hit-news {
+    flex-basis: 20%
+}
+
+.hit-news ul {
+    padding: 0 15px;
+    margin: 0;
+}
+
+.hit-news ul li{
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.main .ads-feature {
+    flex-basis: 35%;
 }
